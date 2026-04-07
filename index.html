@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CuckooChime | The Forest's Timepiece</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --forest-dark: #1a2f1a;
+            --wood-brown: #3e2723;
+            --accent-gold: #d4af37;
+            --cream: #f5f5dc;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, var(--forest-dark) 0%, #0d1a0d 100%);
+            color: var(--cream);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* --- Header --- */
+        header {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .logo {
+            width: 100px;
+            height: 100px;
+            border-radius: 22%;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            margin: 0;
+            color: var(--accent-gold);
+        }
+
+        /* --- Hero Section --- */
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .app-mockup {
+            max-width: 300px;
+            border-radius: 40px;
+            border: 8px solid #222;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+            margin-top: -30px;
+            transform: rotate(-2deg);
+            transition: transform 0.3s ease;
+        }
+
+        .app-mockup:hover {
+            transform: rotate(0deg) scale(1.05);
+        }
+
+        /* --- Features --- */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            padding: 80px 10%;
+            background: rgba(0,0,0,0.2);
+        }
+
+        .feature-card {
+            background: rgba(62, 39, 35, 0.4);
+            padding: 40px;
+            border-radius: 20px;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            backdrop-filter: blur(10px);
+            text-align: center;
+        }
+
+        .feature-card h3 {
+            color: var(--accent-gold);
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* --- Download Button --- */
+        .cta-button {
+            display: inline-block;
+            background: var(--accent-gold);
+            color: var(--wood-brown);
+            padding: 18px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.2rem;
+            margin-top: 40px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background: var(--cream);
+            transform: translateY(-5px);
+        }
+
+        /* --- Footer --- */
+        footer {
+            text-align: center;
+            padding: 60px 20px;
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="app-icon.png" alt="CuckooChime Logo" class="logo">
+        <h1>CuckooChime</h1>
+        <p>The soul of the Black Forest, right in your pocket.</p>
+    </header>
+
+    <section class="hero">
+        <img src="app-screenshot.jpg" alt="App Screenshot" class="app-mockup">
+        
+        <a href="#" class="cta-button">Download for Android</a>
+    </section>
+
+    <section class="features">
+        <div class="feature-card">
+            <h3>Authentic Chimes</h3>
+            <p>High-fidelity recordings of mechanical cuckoo clocks with correct hourly counts.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Silent Hours</h3>
+            <p>Smart "Do Not Disturb" scheduling. Let the bird sleep when you do.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&hearts; Luna and Isla.</p>
+        <p><a href="privacy-policy.html" style="color: var(--cream);">Privacy Policy</a> | <a href="#" style="color: var(--cream);">Support</a></p>
+    </footer>
+
+</body>
+</html>
